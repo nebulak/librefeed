@@ -122,22 +122,18 @@
         // in our CSS
         $('a[aria-expanded=true]').attr('aria-expanded', 'false');
     });
+    /*
     fetch("https://www.golem.de/news/imho-heilloses-durcheinander-bei-netflix-und-amazon-prime-1808-135813.html").then((res) => {
       res.text().then((data) => {
         console.log("got text");
         //let doc = DOMPARSER(data, "text/xml");
         var parser = new DOMParser();
         var doc = parser.parseFromString(data, 'text/html');
-        //var doc = JSDOMParser.parse(data, "https://www.golem.de/news/imho-heilloses-durcheinander-bei-netflix-und-amazon-prime-1808-135813.html");
-        console.log("DOMParser has parsed text");
-        //console.log("parsed text");
         var article = new Readability(doc).parse();
         console.log(article.textContent);
-        console.log("readability has parsed text");
-        console.log("###################################");
-        console.log(article);
       })
     })
+    */
     loadRss();
 
   });
